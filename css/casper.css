@@ -1,0 +1,269 @@
+/* Home page --------------------------------------------------------------------*/
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+html {
+    box-sizing: border-box;
+}
+body, html {
+    height: 100%;
+}
+
+.hero-image {
+    background-color: transparent;
+    background-image: url("../images/hiphop.jpg");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+    .hero-text button {
+        border: none;
+        outline: 0;
+        display: inline-block;
+        padding: 10px 25px;
+        color: black;
+        font-size: 17px;
+        background-color: #ddd;
+        text-align: center;
+        cursor: pointer;
+    }
+
+        .hero-text button:hover {
+            background-color: #ddd;
+            color: #fe4337;
+        }
+
+.row {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    max-width: 1440px;
+    margin-left:auto;
+    margin-right:auto;
+}
+.column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+    .column {
+        width: 100%;
+        display: block;
+    }
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    padding: 0 16px;
+    padding-bottom: 16px;
+}
+
+    .container::after, .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+.title {
+    color: grey;
+}
+
+.button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+    .button:hover {
+        background-color: #ddd;
+        color: #fe4337;
+    }
+
+/* Cultural effects ---------------------------------------------------------*/
+
+
+
+.topics {
+    max-width:1400px ;
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-bottom: 50px;
+    margin: -250px auto 40px 230px;
+    -webkit-box-shadow: 0px 0px 37px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 37px 1px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 37px 1px rgba(0,0,0,0.75);
+    background-color: #ddd;
+    text-align: center;
+}
+.topics details a {
+    text-align: center;
+    padding: 8px 8px 8px 8px;
+}
+
+.topics a {
+    padding: 8px 8px 8px 17px;
+    text-decoration: none;
+    text-align: left;
+    font-size: 17px;
+    color: #f1f1f1;
+    display: block;
+    width: 110px;
+    background-color: #333;
+    transition: 0.7s;
+
+}
+
+    .topics a:hover {
+        color: #fe4337;
+        background-color: #555;
+    }
+    .topics img {
+        max-width: 100%;
+        height: auto;
+    }
+/*NAv ------------------------------------------------------*/
+.contentdiv1 {
+    margin-top: 370px;
+}
+.contentdiv2 h2 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.cultuurnav {
+    background-color: rgba(255,255,255,0);
+    padding-bottom: 20px;
+    width: 220px;
+    height: 100%;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    border-right-style: solid;
+    border-right-color: #555;
+    border-right-width: 2px;
+    z-index:-1;
+}
+.cultuurnav ul {
+    margin-top:100px;
+}
+    .cultuurnav h2 {
+        color: #f1f1f1;
+        margin-top: 100px;
+    }
+
+.cultuurnav a {
+    padding: 8px 8px 8px 47px;
+    text-decoration: none;
+    text-align: left;
+    font-size: 15px;
+    color: #fe4337;
+    display: block;
+}
+
+
+    .cultuurnav a:hover {
+        color: #f1f1f1;
+        background-color: #555;
+        transition: 0.3s ease-in-out;
+    }
+
+@media screen and (max-width: 600px) {
+    .contentdiv1 {
+        margin-top: 0;
+        text-align: center;
+    }
+
+    .contentdiv2 {
+        min-height: 800px;
+    }
+
+    .contentdiv2 h2 {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .contentdiv2 > a {
+        padding: 8px 8px 8px 17px;
+        text-decoration: none;
+        text-align: left;
+        font-size: 15px;
+        color: #f1f1f1;
+        display: block;
+        width: 80px;
+        background-color: #333;
+    }
+
+    .contentdiv2 > a:hover {
+        background-color: #555;
+    }
+
+    .cultuurnav {
+        background-color: #333;
+        padding-bottom: 20px;
+        position: relative;
+        width:100%;
+
+    }
+
+        .cultuurnav h2 {
+            color: #f1f1f1;
+        }
+
+        .cultuurnav a {
+            padding: 8px 8px 8px 17px;
+            text-decoration: none;
+            text-align: left;
+            font-size: 15px;
+            color: #fe4337;
+            display: block;
+        }
+
+            .cultuurnav a:hover {
+                color: #f1f1f1;
+                background-color: #555;
+                transition: 0.3s ease-in-out;
+            }
+            .topics {
+                margin:0;
+                padding:0;
+            }
+    .topics a {
+        padding: 8px 8px 8px 17px;
+        text-decoration: none;
+        text-align: left;
+        font-size: 17px;
+        color: #f1f1f1;
+        display: block;
+        width: 110px;
+        background-color: #333;
+        transition: 0.7s;
+        margin: auto;
+    }
+
+        .topics a:hover {
+            color: #fe4337;
+            background-color: #555;
+        }
+}
