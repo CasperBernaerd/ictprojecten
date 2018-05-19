@@ -122,7 +122,6 @@ body, html {
     text-align: center;
     padding: 8px 8px 8px 8px;
 }
-
 .topics a {
     padding: 8px 8px 8px 17px;
     text-decoration: none;
@@ -157,20 +156,17 @@ body, html {
     padding-bottom: 20px;
     width: 220px;
     height: 100%;
+    margin-bottom:200px;
     text-align: center;
     position: fixed;
-    top: 0;
+    top: 100px;
     border-right-style: solid;
     border-right-color: #555;
     border-right-width: 2px;
-    z-index:-1;
 }
-.cultuurnav ul {
-    margin-top:100px;
-}
+
     .cultuurnav h2 {
-        color: #f1f1f1;
-        margin-top: 100px;
+        color: black;
     }
 
 .cultuurnav a {
