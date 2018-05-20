@@ -1,35 +1,156 @@
 *, *:before, *:after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
+
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
+
 body, html {
-    height: 100%;
+  height: 100%;
 }
 
 /* Greatest Songs & History
 --------------------------------------------------------------------*/
 
 .topics {
-    max-width:1400px ;
-    padding-left: 90px;
-    padding-right: 90px;
-    padding-bottom: 50px;
-    margin: -250px auto 40px 230px;
-    -webkit-box-shadow: 0px 0px 37px 1px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 0px 37px 1px rgba(0,0,0,0.75);
-    box-shadow: 0px 0px 37px 1px rgba(0,0,0,0.75);
-    background-color: #ddd;
-    text-align: center;
+  max-width: 1400px;
+  padding-left: 90px;
+  padding-right: 90px;
+  padding-bottom: 50px;
+  margin: -250px auto 40px 230px;
+  -webkit-box-shadow: 0px 0px 37px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 37px 1px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 37px 1px rgba(0, 0, 0, 0.75);
+  background-color: #ddd;
+  text-align: center;
 }
+
 .topics details a {
-    margin: auto;
-    margin-top: 10px;
-    text-align: center;
-    padding: 8px 8px 8px 8px;
+  margin: auto;
+  margin-top: 10px;
+  text-align: center;
+  padding: 8px 8px 8px 8px;
 }
+
 .topics a {
+  padding: 8px 8px 8px 17px;
+  text-decoration: none;
+  text-align: left;
+  font-size: 17px;
+  color: #f1f1f1;
+  display: block;
+  width: 110px;
+  background-color: #333;
+  transition: 0.7s;
+}
+
+.topics a:hover {
+  color: #fe4337;
+  background-color: #555;
+}
+
+.topics img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*NAv ------------------------------------------------------*/
+
+.contentdiv1 {
+  margin-top: 370px;
+}
+
+.contentdiv2 h2 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.cultuurnav {
+  background-color: rgba(255, 255, 255, 0);
+  padding-bottom: 20px;
+  width: 220px;
+  height: 100%;
+  margin-bottom: 200px;
+  text-align: center;
+  position: fixed;
+  top: 100px;
+  border-right-style: solid;
+  border-right-color: #555;
+  border-right-width: 2px;
+}
+
+.cultuurnav h2 {
+  color: black;
+}
+
+.cultuurnav a {
+  padding: 8px 8px 8px 47px;
+  text-decoration: none;
+  text-align: left;
+  font-size: 15px;
+  color: #fe4337;
+  display: block;
+}
+
+.cultuurnav a:hover {
+  color: #f1f1f1;
+  background-color: #555;
+  transition: 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 600px) {
+  .contentdiv1 {
+    margin-top: 0;
+    text-align: center;
+  }
+  .contentdiv2 {
+    min-height: 800px;
+  }
+  .contentdiv2 h2 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .contentdiv2>a {
+    padding: 8px 8px 8px 17px;
+    text-decoration: none;
+    text-align: left;
+    font-size: 15px;
+    color: #f1f1f1;
+    display: block;
+    width: 80px;
+    background-color: #333;
+  }
+  .contentdiv2>a:hover {
+    background-color: #555;
+  }
+  .cultuurnav {
+    background-color: #333;
+    padding-bottom: 20px;
+    position: relative;
+    width: 100%;
+  }
+  .cultuurnav h2 {
+    color: #f1f1f1;
+  }
+  .cultuurnav a {
+    padding: 8px 8px 8px 17px;
+    text-decoration: none;
+    text-align: left;
+    font-size: 15px;
+    color: #fe4337;
+    display: block;
+  }
+  .cultuurnav a:hover {
+    color: #f1f1f1;
+    background-color: #555;
+    transition: 0.3s ease-in-out;
+  }
+  .topics {
+    margin: 0;
+    padding: 0;
+  }
+  .topics a {
     padding: 8px 8px 8px 17px;
     text-decoration: none;
     text-align: left;
@@ -39,253 +160,132 @@ body, html {
     width: 110px;
     background-color: #333;
     transition: 0.7s;
-
-}
-
-    .topics a:hover {
-        color: #fe4337;
-        background-color: #555;
-    }
-    .topics img {
-        max-width: 100%;
-        height: auto;
-    }
-/*NAv ------------------------------------------------------*/
-.contentdiv1 {
-    margin-top: 370px;
-}
-.contentdiv2 h2 {
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-.cultuurnav {
-    background-color: rgba(255,255,255,0);
-    padding-bottom: 20px;
-    width: 220px;
-    height: 100%;
-    margin-bottom:200px;
-    text-align: center;
-    position: fixed;
-    top: 100px;
-    border-right-style: solid;
-    border-right-color: #555;
-    border-right-width: 2px;
-}
-
-    .cultuurnav h2 {
-        color: black;
-    }
-
-.cultuurnav a {
-    padding: 8px 8px 8px 47px;
-    text-decoration: none;
-    text-align: left;
-    font-size: 15px;
+    margin: auto;
+  }
+  .topics a:hover {
     color: #fe4337;
-    display: block;
+    background-color: #555;
+  }
 }
 
-
-    .cultuurnav a:hover {
-        color: #f1f1f1;
-        background-color: #555;
-        transition: 0.3s ease-in-out;
-    }
-
-@media screen and (max-width: 600px) {
-    .contentdiv1 {
-        margin-top: 0;
-        text-align: center;
-    }
-
-    .contentdiv2 {
-        min-height: 800px;
-    }
-
-    .contentdiv2 h2 {
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
-
-    .contentdiv2 > a {
-        padding: 8px 8px 8px 17px;
-        text-decoration: none;
-        text-align: left;
-        font-size: 15px;
-        color: #f1f1f1;
-        display: block;
-        width: 80px;
-        background-color: #333;
-    }
-
-    .contentdiv2 > a:hover {
-        background-color: #555;
-    }
-
-    .cultuurnav {
-        background-color: #333;
-        padding-bottom: 20px;
-        position: relative;
-        width:100%;
-
-    }
-
-        .cultuurnav h2 {
-            color: #f1f1f1;
-        }
-
-        .cultuurnav a {
-            padding: 8px 8px 8px 17px;
-            text-decoration: none;
-            text-align: left;
-            font-size: 15px;
-            color: #fe4337;
-            display: block;
-        }
-
-            .cultuurnav a:hover {
-                color: #f1f1f1;
-                background-color: #555;
-                transition: 0.3s ease-in-out;
-            }
-            .topics {
-                margin:0;
-                padding:0;
-            }
-
-    .topics a {
-        padding: 8px 8px 8px 17px;
-        text-decoration: none;
-        text-align: left;
-        font-size: 17px;
-        color: #f1f1f1;
-        display: block;
-        width: 110px;
-        background-color: #333;
-        transition: 0.7s;
-        margin: auto;
-    }
-
-        .topics a:hover {
-            color: #fe4337;
-            background-color: #555;
-        }
-}
 /* History
 -------------------------------------------------------------------------*/
 
-.year{
+.year {
   font-weight: bold;
   text-align: left;
   margin-bottom: 1em;
 }
 
-.years{
+.years {
   font-weight: bold;
   text-align: left;
+  margin-bottom: -10px;
 }
 
-.historyImages{
+.historyImages {
   width: 100%;
+}
+
+.reading {
+  color: #fe4337;
 }
 
 /* Buttons
 -----------------------------------------------------------------------*/
 
-
 audio {
-    width: 100%;
+  width: 100%;
 }
 
 details {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 #buttonAudioPlayer {
-    font: bold 16px Oswald;
-    text-decoration: none;
-    background-color: #ddd;
-    color: #333333;
-    padding: 2px 6px 2px 6px;
-    width: 180px;
-    margin: auto;
-    margin-top: 20px;
-    text-align: center;
+  font: bold 16px Oswald;
+  text-decoration: none;
+  background-color: #ddd;
+  color: #333333;
+  padding: 2px 6px 2px 6px;
+  width: 180px;
+  margin: auto;
+  margin-top: 20px;
+  text-align: center;
 }
 
 #buttonAudioPlayer span {
-        cursor: pointer;
-        display: inline-block;
-        position: relative;
-        transition: 0.5s;
-    }
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
 
-        #buttonAudioPlayer span:after {
-            content: '\00bb';
-            position: absolute;
-            opacity: 0;
-            top: 0;
-            right: -20px;
-            transition: 0.5s;
-        }
+#buttonAudioPlayer span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
 
-    #buttonAudioPlayer:hover span {
-        padding-right: 25px;
-    }
+#buttonAudioPlayer:hover span {
+  padding-right: 25px;
+}
 
-        #buttonAudioPlayer:hover span:after {
-            opacity: 1;
-            right: 0;
-        }
-
+#buttonAudioPlayer:hover span:after {
+  opacity: 1;
+  right: 0;
+}
 
 .topics>.watchButton {
-    font: bold 16px Oswald;
-    text-decoration: none;
-    background-color: #333333;
-    color: #ddd;
-    padding: 8px 8px 8px 8px;
-    width: 310px;
-    margin-top: 10px;
-    margin: auto;
-    transition: all 0.5s;
-    text-align: center;
+  font: bold 16px Oswald;
+  text-decoration: none;
+  background-color: #333333;
+  color: #ddd;
+  padding: 8px 8px 8px 8px;
+  width: 310px;
+  margin-top: 10px;
+  margin: auto;
+  transition: all 0.5s;
+  text-align: center;
 }
 
 .topics div .watchButton {
-    font: bold 16px Oswald;
-    text-decoration: none;
-    text-align: center;
-    background-color: #333333;
-    color: #ddd;
-    padding: 8px 8px 8px 8px;
-    width: 135px;
-    margin-top: 10px;
-    margin: auto;
-    transition: all 0.5s;
+  font: bold 16px Oswald;
+  text-decoration: none;
+  text-align: center;
+  background-color: #333333;
+  color: #ddd;
+  padding: 8px 8px 8px 8px;
+  width: 135px;
+  margin-top: 10px;
+  margin: auto;
+  transition: all 0.5s;
 }
 
 .topics .watchButton span {
-        cursor: pointer;
-        display: inline-block;
-        position: relative;
-        transition: 0.5s;
-    }
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
 
-        .topics .watchButton span:after {
-            content: '\00bb';
-            position: absolute;
-            opacity: 0;
-            top: 0;
-            right: -20px;
-            transition: 0.5s;
-        }
+.topics .watchButton span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
 
-    .topics .watchButton:hover span {
-        padding-right: 25px;
-    }
+.topics .watchButton:hover span {
+  padding-right: 25px;
+}
 
-        .topics .watchButton:hover span:after {
-            opacity: 1;
-            right: 0;
-        }
+.topics .watchButton:hover span:after {
+  opacity: 1;
+  right: 0;
+}
