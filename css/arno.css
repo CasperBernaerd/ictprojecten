@@ -171,7 +171,23 @@ body, html {
             background-color: #555;
         }
 }
+/* History
+-------------------------------------------------------------------------*/
 
+.year{
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 1em;
+}
+
+.years{
+  font-weight: bold;
+  text-align: left;
+}
+
+.historyImages{
+  width: 100%;
+}
 
 /* Buttons
 -----------------------------------------------------------------------*/
