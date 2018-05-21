@@ -67,6 +67,7 @@ a {
         .topnav a:hover {
             background-color: #ddd;
             color: #fe4337;
+			transition: 0.5s;
         }
 
 .active {
