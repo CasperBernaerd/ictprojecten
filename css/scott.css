@@ -11,6 +11,7 @@ body, html {
 /* Style & Worldwide
 --------------------------------------------------------------------*/
 
+
 .topics {
     max-width:1400px ;
     padding-left: 90px;
@@ -46,11 +47,15 @@ body, html {
         color: #fe4337;
         background-color: #555;
     }
-    .topics img {
+	.topics img {
         max-width: 100%;
         height: auto;
     }
-/*NAv ------------------------------------------------------*/
+	
+#introduction {
+	text-align: center;
+}
+/*Nav ------------------------------------------------------*/
 .contentdiv1 {
     margin-top: 370px;
 }
