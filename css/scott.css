@@ -11,6 +11,10 @@ body, html {
 /* Style & Worldwide
 --------------------------------------------------------------------*/
 
+#map {
+height: 25%;
+width: 25%;
+}
 
 .topics {
     max-width:1400px ;
@@ -176,3 +180,6 @@ body, html {
             background-color: #555;
         }
 }
+
+
+
