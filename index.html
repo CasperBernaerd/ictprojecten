@@ -7,8 +7,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/mainCSS.css">
     <link rel="stylesheet" href="css/casper.css">
+	<link rel="stylesheet" href="css/homepageplayer.css">
     <link rel="shortcut icon" type="image/png" href="images/icons/logo.png" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 </head>
 <body>
     <header>
@@ -22,8 +24,7 @@
             <a href="javascript:void(0);" class="icon" onclick="myFunction()"> <i class="fa fa-bars"></i></a>
         </div>
     </header>
-
-    <div class="hero-image">
+    <div  class="hero-image">
       <div id="hero-overlay"></div>
         <div class="hero-text">
           <h1 style="font-size:80px">Welcome!</h1>
@@ -39,32 +40,53 @@
                 <img src="images/cultural/breakdance.jpg" alt="breakdance" style="width:100%">
                 <div class="container">
                     <h2>Breakdance</h2>
-                    <p class="title">Want to be involved ?</p>
-                    <p>Come and visit our view of the inspiration of hiphop</p>
-                    <p><a href="cultural.html"><button class="button">Go To</button></a></p>
+                    <p class="htitle">Want to be involved ?</p>
+                    <p>Come and check it out! we have looked up how you can be a part of the hiphop community!</p>
+                    <p><button class="button" onclick="window.location.href='cultural.html#subject3'">Click here</button></p>
                 </div>
             </div>
         </div>
 
         <div class="column">
-            <div class="card">
-                <img src="images/hits/Snoop-Dr.dre.jpg" alt="drdre" style="width:100%">
+            <div class="card bg">
+					<div class="player">
+						<div class="pl"></div>
+						<div class="title"></div>
+						<div class="artist"></div>
+						<div class="controls">
+							<div class="play"></div>
+							<div class="pause"></div>
+							<div class="rew"></div>
+							<div class="fwd"></div>
+						</div>
+						<div class="volume"></div>
+						<div class="tracker"></div>
+					</div>
+					<ul class="playlist hidden">
+						<li audiourl="2Pac-Do-for-love.mp3"  artist="Tupac Shakur">Do for love</li>
+						<li audiourl="2Pac-Friend-Like-me.mp3"  artist="Tupac Shakur">Friend Like</li>
+						<li audiourl="Biggie-Who-shot-ya.mp3"  artist="Notorius B.I.G">Who Shot Ya?</li>
+						<li audiourl="Big L - Put It On.mp3"  artist="Big L">Put It On</li>
+						<li audiourl="Big L - MVP.mp3"  artist="Big L">MVP</li>
+						<li audiourl="A Tribe Called Quest - Electric Relaxation.mp3" artist="Tribe Called Quest">Relaxation</li>
+						<li audiourl="Wu-Tang Clan - People Say.mp3" artist="Wu-Tang Clan">People Say</li>
+					</ul>
                 <div class="container">
-                    <h2>Mike Ross</h2>
-                    <p class="title">Art Director</p>
-                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                    <p><button class="button">Contact</button></p>
+                    <h2>Listen to music !</h2>
+                    <p class="htitle">Hip Hop</p>
+                    <p>Do you want to learn more about the greatest hits ?  </br> come and see!</p>
+                    <p><button class="button" onclick="window.location.href='songs.html#subject1'">Click here</button></p>
                 </div>
             </div>
         </div>
         <div class="column">
             <div class="card">
-                <img src="images/hits/Snoop-Dr.dre.jpg" alt="John" style="width:100%">
+                <img src="images/cultural/breakdance.jpg" alt="John" style="width:100%">
                 <div class="container">
-                    <h2>John Doe</h2>
-                    <p class="title">Designer</p>
-                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                    <p><button class="button">Contact</button></p>
+                    <h2>Different styles of hiphop</h2>
+                    <p class="htitle">Want to know several styles?</p>
+                    <p>Come and check out our line-up of a couple hiphop sub-genre's that we collected!</p>
+                    <p><button class="button" onclick="window.location.href='styles.html'">Click here</button></p>
                 </div>
             </div>
         </div>
@@ -74,6 +96,9 @@
     <footer>
         <p>&copy; Arno Casper Scott 2018</p>
         <script src="js/mainJavascript.js"></script>
+		<script type="text/javascript" src="Audio-player/js/jquery-1.7.2.min.js"></script>
+		<script type="text/javascript" src="Audio-player/js/jquery-ui-1.8.21.custom.min.js"></script>
+		<script type="text/javascript" src="Audio-player/js/main.js"></script>
     </footer>
 </body>
 </html>
