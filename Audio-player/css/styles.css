@@ -4,13 +4,13 @@
     padding: 0;
 }
 body {
-      background-image: url("Background/Blurry2.jpg");
+  background-image: url(background/blurry2.jpg);
 }
 
 #fixedbutton {
     position: fixed;
     bottom: 10px;
-    left: 10px; 
+    left: 10px;
 
     border-radius: 10px;
     width: 30px;
@@ -20,7 +20,7 @@ body {
 
 #fixedbutton2 {
     position: fixed;
-    left: 10px; 
+    left: 10px;
     top: 20px;
 
     border-radius: 10px;
