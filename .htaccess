@@ -1,3 +1,9 @@
+RewriteEngine On
+RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
+RewriteRule ^ /%1 [NC,L,R]
+
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^ %{REQUEST_URI}.html [NC,L]
 # MP3 audio
 #AddType audio/mpeg3 .mp3
 #AddType audio/mp3 .mp3
@@ -17,3 +23,4 @@ AddType audio/ogg .ogg
 
 # Webm video
 #AddType video/webm .webm
+
