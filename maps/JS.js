@@ -1,15 +1,22 @@
 function initMap() {
 	var map = new google.maps.Map(document.getElementById('map'), {
-		center: {lat: 50.92898, lng: 5.395022},
-		zoom: 0,
+		center: {lat: 35.804760, lng: 20.550983},
+		zoom: 1.5,
 	});
 
-	var logo = "images/Logo_klein.png";
 	var markerPosities = [
-		{title: "UC Leuven-Limburg - Campus Diepenbeek" ,
-			position: {lat: 50.92898, lng: 5.395022}},
-		{title: "UC Leuven-Limburg - Campus Proximus" ,
-			position: {lat: 50.8468791, lng: 4.7251748}}];
+		{title: "North America" ,
+			position: {lat: 47.161890, lng: -101.873985}},
+		{title: "South America" ,
+			position: {lat: -9.597565, lng: -56.231367}},
+		{title: "Africa" ,
+			position: {lat: 22.297859, lng: 18.669011}},
+		{title: "Europe" ,
+			position: {lat: 48.626817, lng: 13.511517}},
+		{title: "Asia" ,
+			position: {lat: 62.054184, lng: 93.757283}},
+		{title: "Oceania" ,
+			position: {lat: -25.363, lng: 131.044}}];
 			
 	//loop door...
 	var grenzen = new google.maps.LatLngBounds();
@@ -20,7 +27,6 @@ function initMap() {
 		map: map,
 		position: markerPosities[i].position,
 		title: markerPosities[i].title,
-		icon: logo
 		});
 		marker.addListener('click', function(){
 		verplaatsInfoWindow(this, largeInfoWindow);
@@ -29,7 +35,7 @@ function initMap() {
 		grenzen.extend(marker.position);
 		}
 		
-		map.fitBounds(grenzen);
+		//map.fitBounds(grenzen);
 		
 		markers.push(marker);
 

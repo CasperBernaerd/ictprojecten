@@ -12,11 +12,12 @@ body, html {
 --------------------------------------------------------------------*/
 
 #map {
-height: 750px;
-width: 1000px;
-margin-left: 680px;
+height: 500px;
+width: 850px;
+margin-left: 450px;
 position:fixed;
-margin-top:150px;
+margin-top:25px;
+margin-bottom:275px;
 }
 
 .topics {
@@ -64,7 +65,7 @@ margin-top:150px;
 }
 /*Nav ------------------------------------------------------*/
 .contentdiv1 {
-    margin-top: 370px;
+    margin-top: 150px;
 }
 .contentdiv2 h2 {
     padding-top: 20px;
