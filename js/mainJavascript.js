@@ -1,4 +1,11 @@
-
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
 /*Smooth scrolling */
 $(document).ready(function () {
     $("a").on('click', function (event) {
@@ -17,13 +24,6 @@ $(document).ready(function () {
         }
     });
 
-	function myFunction() {
-    var x = $('myTopnav');
-    if (x.className === "topnav") {
-        x.className += " responsive";
-    } else {
-        x.className = "topnav";
-    }
-}
+
 	
 });
