@@ -12,13 +12,20 @@ body, html {
 --------------------------------------------------------------------*/
 
 #map {
-height: 750px;
-width: 1000px;
-margin-left: 680px;
+height: 500px;
+width: auto;
+margin: auto;
 position:fixed;
-margin-top:150px;
 }
 
+#map_intro{
+text-align:center;
+
+}
+h1 {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
 .topics {
     max-width:1400px ;
     padding-left: 90px;
@@ -105,6 +112,10 @@ margin-top:150px;
     }
 
 @media screen and (max-width: 600px) {
+	
+	#map{
+	display: none;
+	}
     .contentdiv1 {
         margin-top: 0;
         text-align: center;

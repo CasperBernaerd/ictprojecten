@@ -34,22 +34,14 @@ function initMap() {
 		});
 		
 		grenzen.extend(marker.position);
-		}
-		
-		//map.fitBounds(grenzen);
-		
+		}		
 		markers.push(marker);
-
 		
-	var infowindow = new google.maps.InfoWindow({
-		content: "<h2>UC Leuven-Limburg - Campus Diepenbeek</h2>"+
-		"<p>Agoralaan 1, 3590 Diepenbeek</p>"
-	});	
 
 	function verplaatsInfoWindow(marker, infoWindow){
 		if (infoWindow.marker != marker){
 			infoWindow.marker = marker
-			infoWindow.setContent('<h1>'+marker.title+'<h1>'+'<a href="#'+marker.title+'">Click here!</a>');
+			infoWindow.setContent('<h2>'+marker.title+'</h2>'+'<a href="#'+marker.title+'">Click here!</a>');
 			infoWindow.open(map, marker);
 		}
 	}
