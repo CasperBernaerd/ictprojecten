@@ -34,7 +34,7 @@ h3 {
     padding-bottom: 0;
 }
 
-.footerfa {
+footer .fa {
   padding: 20px;
   font-size: 30px;
   width: 50px;
@@ -104,7 +104,7 @@ footer {
 
 footer p {
 	padding: 20px;
-	padding-top: 50px;
+	padding-top: 100px;
 	color: #818181;
 	background-color: #333;
 	text-align: center;
